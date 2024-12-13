@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal SIGRH</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: nunito, sans-serif;
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-position: 50%;
+            background-size: cover;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 0 10%;
+
+        }
+
+        .info {
+            max-width: 50%;
+        }
+
+        .info h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info ul li {
+            margin-bottom: 10px;
+        }
+
+        .info ul li a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .info ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .login {
+            background: white;
+            color: black;
+
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        .login h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .login input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login input[type="checkbox"] {
+            width: auto;
+        }
+
+        .captcha {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .captcha img {
+            height: 40px;
+        }
+
+        .login img {
+            margin-left: 50px;
+            margin-bottom: 60px;
+        }
+
+        .login button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login button:hover {
+            background-color: #45a049;
+        }
+
+        .login .links {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        .login .links a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .login .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>DIRETORIA DE GESTÃO E DESENVOLVIMENTO DE PESSOAS</h1>
+            <ul>
+                <li>Use o seu CPF para acesso às consultas do portal do SIGRH.</li>
+                <li>Caso tenha esquecido sua senha, você pode recebê-la via email. Para isto preencha o campo Usuário
+                    com seu CPF e clique no botão "Esqueceu sua senha?" ou contacte diretamente o <a href="#">setor de
+                        RH do seu órgão</a>.</li>
+                <li>Acesso aos <a href="#">manuais administrativos</a>, <a href="#">formulários</a> e <a
+                        href="#">informes</a> disponibilizados pela Secretaria de Estado da Administração.</li>
+            </ul>
+        </div>
+        <div class="login">
+            <img src="images/logo.png" alt="">
+
+            <input type="text" id="usuario" name="usuario" placeholder="Digite seu CPF">
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+            <div class="links">
+                <label><input type="checkbox" name="manter-conectado"> Mantenha-me conectado</label>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+
+            <a href="inicio.html"><button>ACESSAR</button></a>
+        </div>
+    </div>
+</body>
+
+</html>

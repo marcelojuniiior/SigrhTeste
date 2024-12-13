@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal SIGRH</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: nunito, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header .search {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .header .search input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .header .user-info {
+            align-items: center;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 1000px;
+            background-color: #006837;
+            color: #fff;
+            // position: fixed;
+            top: 0;
+            bottom: 0;
+            padding: 20px;
+            //overflow-y: auto;
+            border: 1px solid #e60850;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+            padding: 5px;
+
+        }
+
+        .sidebar ul li:hover {
+            margin-bottom: 10px;
+
+            background-color: #ffffff;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+            color: #108d10;
+        }
+
+        .content {
+            margin-left: 90px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content .box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            background-color: #f8f9fa;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px);
+            margin-left: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/images/logo.png" alt="SIGRH Logo">
+            <div><b>GOVERNO DO ESTADO DE SANTA CATARINA</b><br><small>1401 - SECRETARIA DE ESTADO DA SAÚDE</small></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Pesquisar">
+        </div>
+        <div class="user-info">
+            <div>Bem vindo(a),</div>
+            <div><b>SILVA OLIVEIRA RODRIGUES</b></div>
+            <div>Matrícula: 06346560-2-01</div>
+
+        </div>
+    </div>
+    <div style="display: flex;">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Contracheque</a></li>
+                <li><a href="#">Funcional</a></li>
+                <li><a href="#">Consignações</a></li>
+                <li><a href="#">Benefícios</a></li>
+                <li><a href="#">Licença Prêmio</a></li>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Estágio Probatório</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Afastamentos</a></li>
+                <li><a href="#">Formação</a></li>
+                <li><a href="#">Certificados</a></li>
+                <li><a href="#">Tarefas</a></li>
+                <li><a href="#">Rendimentos</a></li>
+                <li><a href="#">Programação de férias</a></li>
+                <li><a href="#">Atualização Cadastral</a></li>
+                <li><a href="#">Escalas</a></li>
+                <li><a href="#">Senha</a></li>
+                <li><a href="#">Avaliação</a></li>
+                <li><a href="#">Banco de Horas</a></li>
+                <li><a href="#">Ficha Financeira</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Histórico</h1>
+            <div class="box">
+                <p>Contracheque</p>
+            </div>
+            <script> window.chtlConfig = { chatbotId: "9233857973" } </script>
+            <script async data-id="9233857973" id="chatling-embed-script" type="text/javascript"
+                src="https://chatling.ai/js/embed.js"></script>
+        </div>
+        <div class="footer">
+            © Diretoria de Gestão e Desenvolvimento de Pessoas - Governo do Estado de Santa Catarina
+        </div>
+    </div>
+
+</body>
+
+</html>
